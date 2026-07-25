@@ -12,7 +12,7 @@ setup w = do
     le <- mkLabel "erd(mm)" w
     ie <- UI.input # set (attr "value") "show here, erd of rim"
     let sps = [x!!1|x <- [a,b,c]]
-    d <-mkSpinboxWithTitle "flangeWidth(mm)" [50,100,1,60] w
+    d <-mkSpinboxWithTitle "flangeWidth(mm)" [30,100,1,60] w
     e <-mkSpinboxWithTitle "endWidth" [90,135,1,120] w
     f <-mkSpinboxWithTitle "end2flange(mm)" [10,50,1,40] w
     lo <- mkLabel "offset(mm)" w
@@ -21,7 +21,7 @@ setup w = do
     g <-mkSpinboxWithTitle "erd(mm)" [100,700,1,500] w
     h <-mkSpinboxWithTitle "holes" [28,36,4,32] w
     i <-mkSpinboxWithTitle "pcd(mm)" [20,80,1,40] w
-    j <-mkSpinboxWithTitle "flange width(mm)" [20,70,1,50] w
+    j <-mkSpinboxWithTitle "flange width(mm)" [20,100,1,50] w
     k <-mkSpinboxWithTitle "offset(mm)" [0,20,1,10] w
     l <-mkSpinboxWithTitle "cross" [0,4,1,3] w
     ls <- mkLabel "spokeLength(mm)" w
